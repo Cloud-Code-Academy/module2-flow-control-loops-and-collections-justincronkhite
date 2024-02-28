@@ -17,6 +17,10 @@ public with sharing class FlowControlLoopsCollectionsTest {
 
         result = FlowControlLoopsCollections.helloWorld(5, 10);
         Assert.isNull(result, 'Incorrect result for x < y');
+        
+        result = FlowControlLoopsCollections.helloWorld(null, 10);
+        Assert.isNull(result, 'Incorrect result for x < y');
+
     }
 
     @IsTest
